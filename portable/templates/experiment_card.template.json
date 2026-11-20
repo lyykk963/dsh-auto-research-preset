@@ -1,0 +1,58 @@
+{
+  "_template": "experiment_card — 实验卡片（迁自融合研究 references/reproducibility-protocol.md，v9.2）",
+  "_usage": "每个实验复制一份到 <工作区>/.dsh-research/evidence/<phaseId>/experiment_card.json，然后用 gates/experiment_card.gate.json 过 stage_gate.py。占位符 {..} 必须全部替换；不确定的值写 null 并在 _unknown 里列明，不得留空串假装已记录。",
+  "_rules": [
+    "R1 基本可重复 = seed_map + 环境记录",
+    "R2 标准可重复 = R1 + params + data.version",
+    "R3 完全可重复 = R2 + 环境冻结 + 多种子验证(>=3) + 本卡片",
+    "R4 容器化可重复 = R3 + Dockerfile / conda env 文件",
+    "结果一致性：同种子重复运行 2 次，主要指标相对差 < 1%",
+    "随机性评估：至少 3 个不同种子，报告 std over seeds"
+  ],
+
+  "id": "EXP-{YYYYMMDDHHMM}-{NN}",
+  "meta": {
+    "title": "{实验一句话标题}",
+    "owner_phase": "execute",
+    "started_at": "{ISO8601}",
+    "finished_at": "{ISO8601}"
+  },
+
+  "env": {
+    "seed_map": { "python": 42, "numpy": 42, "torch": 42 },
+    "python_version": "{3.14.3}",
+    "requirements": "requirements.txt",
+    "env_frozen": false,
+    "container": null,
+    "hardware": { "gpu": "{RTX 4090 | none}", "cuda": "{12.1 | n/a}", "cpu": "{...}", "ram_gb": null }
+  },
+
+  "config": {
+    "params": { "lr": 0.001, "batch_size": 64 },
+    "data": { "source": "{数据集来源}", "version": "{v2.1}", "sha256": "{sha256:...}" },
+    "code": { "commit": "{abc123}", "branch": "main", "dirty": false }
+  },
+
+  "results": {
+    "primary_metric": "{metric 名}",
+    "value": null,
+    "baseline": null,
+    "improvement_pct": null,
+    "uncertainty": { "std_over_seeds": null, "n_seeds": 0 },
+    "notes": "{结果解读一句话，不得在此处下质量结论}"
+  },
+
+  "checks": {
+    "repeat_runs": 0,
+    "repeat_deviation_pct": null,
+    "seeds_used": 0,
+    "plot_reproduced": false,
+    "anomalies": [ { "type": "{NaN_loss}", "action": "{gradient_clip}" } ]
+  },
+
+  "reproducibility_level": "R1",
+  "validation": { "passed": null, "checked_by": "stage_gate.py" },
+
+  "_unknown": ["列出所有填 null 的字段及原因（例如：未获取到 GPU 型号）"],
+  "_evidence": ["HASHES.txt", "run.log", "results/main.json"]
+}

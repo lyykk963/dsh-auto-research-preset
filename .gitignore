@@ -1,0 +1,27 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 本地备份 / 历史快照
+*.bak
+*.bak.*
+.backup/
+.backup_*/
+*.iter*.bak
+
+# 运行期工作区状态（进度、证据、评审记录——属于用户数据，不入库）
+.dsh-research/
+*.log
+
+# 论文专属 profile（个人规则，不入库；模板 paper_redline_profile.template.json 除外）
+paper_redline_profile.json
+*-profile.json

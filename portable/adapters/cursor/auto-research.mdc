@@ -1,0 +1,13 @@
+---
+description: 科研自动化工作法（证据门 / 口径冻结 / 不自我验收）
+globs: ["**/*.md", "**/*.py", "**/*.json"]
+alwaysApply: false
+---
+
+做科研类任务时：
+
+- 关键数字必须可重算 → 收尾跑 `tools/check_claims.py`
+- 分析前冻结口径 → `tools/prereg.py freeze`，改口径 `amend -m "原因"`
+- 机检 ≠ 验收；没有独立评审时，交付里写明「质量门：DRIVE only」
+- 进度写 `<工作区>/.dsh-research/progress.json`
+- 完整流程见本仓库 `sci-autoresearch-portable/SKILL.md`

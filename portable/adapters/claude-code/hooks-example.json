@@ -1,0 +1,16 @@
+{
+  "_comment": "合进 .claude/settings.json 的 hooks 段；Stop 时跑一次轻量体检，防止带着坏状态结束会话。",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/sci-autoresearch-portable/tools/selfcheck.py\" --fast || true"
+          }
+        ]
+      }
+    ]
+  }
+}

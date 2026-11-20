@@ -1,0 +1,15 @@
+## 科研自动化（auto-research）
+
+本仓库启用了「科研自动化」工作法。执行要点：
+
+1. **先读** `sci-autoresearch-portable/SKILL.md`，按其六阶段推进：
+   intake → plan → litreview → method → execute → write。
+2. **证据先于结论**：每个关键数字都要能被重算。收尾跑
+   `python sci-autoresearch-portable/tools/check_claims.py <交付目录>`。
+3. **口径先冻结**：动手分析前写 `analysis-plan.json` 并
+   `python tools/prereg.py freeze <交付目录>`；改口径要 `amend -m "理由"`。
+4. **不许自己给自己打验收分**：机检只能 DRIVE。需要 ACQUIT 时，
+   用 `codex exec` 起一个干净子进程复算（独立评审），把结果落 `reviews/`。
+5. **进度落盘**：`<工作区>/.dsh-research/progress.json`，字段见
+   `sci-autoresearch-portable/templates/progress.example.json`。
+6. **交付前**：`check_delivery.py` 必须 9/9；PPT 另跑 `check_deck.py`。

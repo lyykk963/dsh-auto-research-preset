@@ -1,0 +1,84 @@
+{
+  "_template_note": "论文专属『红牌画像』模板。复制成 <你自己的论文>-profile.json 后填入真实规则，再用 --profile 传入 advisor_pattern_gate.py；不要直接改引擎里的通用规则。",
+  "profile_name": "example-profile",
+  "profile_note": "每一条规则都必须能追溯到一次真实审稿意见（source_round），没有来源的规则是噪音。",
+
+  "banned_terms": [
+    {
+      "id": "B-SOTA-NO-EVIDENCE",
+      "pattern": "\\bstate-of-the-art\\b|\\bSOTA\\b",
+      "severity": "Major",
+      "reason": "示例规则：强断言必须同段给出对比证据；无证据时改用可核查的表述。",
+      "source_round": "R1",
+      "when_any": ["\\bours\\b", "\\bour method\\b"]
+    }
+  ],
+
+  "numeric_invariants": [
+    {
+      "id": "N-EXAMPLE-COUNT",
+      "name": "示例：某个量的口径必须唯一",
+      "forbidden_pattern": "\\b42\\b",
+      "require_context": "(?:layer|block|module|sample|seed)",
+      "exempt_if": null,
+      "severity": "Critical",
+      "reason": "示例规则：同一量在全文（正文+补充材料）只能有一个口径值；旧口径数字不得残留。",
+      "source_round": "R2"
+    }
+  ],
+
+  "narrative": {
+    "forbidden_phrases": [
+      {
+        "id": "NB-EXAMPLE-OLD-STORY",
+        "pattern": "old\\s+story\\s+phrase\\s+that\\s+was\\s+overturned",
+        "severity": "Critical",
+        "reason": "示例规则：核心结论一旦改判，旧表述必须全文清除并由脚本守门。",
+        "source_round": "R3"
+      }
+    ],
+    "canonical_claims": [
+      {
+        "id": "C-EXAMPLE-CANONICAL",
+        "any_of": ["canonical\\s+phrasing"],
+        "min_files": 1,
+        "severity": "Major",
+        "reason": "示例规则：核心结论句在 Abstract / Introduction / Discussion / Conclusion 四处必须同一口径。",
+        "source_round": "R3"
+      }
+    ]
+  },
+
+  "style": {
+    "max_sentence_words": 30,
+    "sentence_words_severity": "Major",
+    "caption_max_chars": 400,
+    "caption_severity": "Minor",
+    "section_max_words": 1600,
+    "section_severity": "Major",
+    "filler_openers": ["notably", "importantly", "in other words", "overall", "additionally", "moreover", "furthermore", "in addition"],
+    "filler_severity": "Minor",
+    "filler_consecutive_limit": 3,
+    "spelling": {
+      "us": ["behavior", "labeled", "normalize", "analyze", "modeling", "generalization", "characterize", "minimize", "maximize", "color"],
+      "uk": ["behaviour", "labelled", "normalise", "analyse", "modelling", "generalisation", "characterise", "minimise", "maximise", "colour"],
+      "severity": "Major"
+    }
+  },
+
+  "compliance": {
+    "highlights": { "min": 3, "max": 5, "max_chars_each": 85, "severity": "Critical" },
+    "abstract_max_words": 250,
+    "abstract_no_citation": true,
+    "abstract_severity": "Critical"
+  },
+
+  "residue": {
+    "patterns": [
+      { "id": "RES-TODO", "pattern": "\\b(?:TODO|FIXME|XXX|TBD|PLACEHOLDER)\\b", "severity": "Critical", "reason": "投稿前不得残留占位符。", "source_round": "R1" },
+      { "id": "RES-CN-LEFTOVER", "pattern": "待补|待定|占位|待确认|草稿", "severity": "Critical", "reason": "中文残留在英文稿中。", "source_round": "R1" }
+    ]
+  },
+
+  "ignore_line_contains": ["advisor_pattern_gate", "text_gates"]
+}

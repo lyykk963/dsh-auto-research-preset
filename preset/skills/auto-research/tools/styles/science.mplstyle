@@ -1,0 +1,67 @@
+# provenance | 上游: D:\code\models\Tools\融合研究\融合研究-共享版\assets\science.mplstyle | sha256: 1ab9dac744889d67a6a0ba9e715fd52ba8a23ed9388d1e454de252548f44a23a | 迁入: 2026-09-12 | 改动: 无
+## Science 系列期刊风格
+## 来源: Light-skills project (light-figure-drawing)
+## 双栏 120mm, Helvetica/Arial, 刻度朝内
+
+# 字体
+font.family: sans-serif
+font.sans-serif: Helvetica, Arial, Liberation Sans
+font.size: 8
+axes.titlesize: 9
+axes.labelsize: 8
+legend.fontsize: 7
+xtick.labelsize: 7
+ytick.labelsize: 7
+
+# 图形尺寸 (双栏 120mm ≈ 4.7in)
+figure.figsize: 4.7, 3.5
+figure.dpi: 300
+savefig.dpi: 300
+savefig.bbox: tight
+savefig.pad_inches: 0.02
+
+# 坐标轴
+axes.linewidth: 0.6
+axes.spines.top: False
+axes.spines.right: False
+axes.spines.left: True
+axes.spines.bottom: True
+axes.labelpad: 3
+axes.titlepad: 4
+
+# 刻度 (朝内)
+xtick.major.size: 3
+xtick.major.width: 0.5
+xtick.minor.size: 1.5
+xtick.minor.width: 0.3
+ytick.major.size: 3
+ytick.major.width: 0.5
+ytick.minor.size: 1.5
+ytick.minor.width: 0.3
+xtick.direction: in
+ytick.direction: in
+xtick.major.pad: 3
+ytick.major.pad: 3
+
+# 线条
+lines.linewidth: 1.2
+lines.markersize: 4
+lines.markeredgewidth: 0
+
+# 图例
+legend.frameon: False
+legend.handlelength: 1.2
+legend.handletextpad: 0.5
+legend.columnspacing: 1.0
+
+# 图像
+image.cmap: RdBu_r
+
+# 柱状图
+patch.linewidth: 0.4
+patch.edgecolor: white
+
+# Okabe-Ito 色盲安全色环
+# ⚠️ 必须用 RGB 元组，不能写 '#RRGGBB'：matplotlib 读 .mplstyle 时 _strip_comment()
+#    会把第一个 '#' 之后全部当注释剥掉，十六进制色值会被静默截断（2026-10-17 实测）。
+axes.prop_cycle : cycler('color', [(0.9020,0.6235,0.0000), (0.3373,0.7059,0.9137), (0.0000,0.6196,0.4510), (0.9412,0.8941,0.2588), (0.0000,0.4471,0.6980), (0.8353,0.3686,0.0000), (0.8000,0.4745,0.6549), (0.0000,0.0000,0.0000)])

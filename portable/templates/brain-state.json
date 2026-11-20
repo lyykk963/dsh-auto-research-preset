@@ -1,0 +1,19 @@
+{
+  "taskId": "2026-09-04-示例",
+  "mode": { "id": "night-auto", "name": "夜间全自动", "customized": false, "axes": { "L": "L2/L3", "A": "A4", "R": "Autopilot", "T": "T3", "M": "Balanced", "D": ["D2", "D3", "晨报"] } },
+  "goal": "一句话研究目标（可验收）",
+  "hypotheses": [
+    { "id": "H1", "text": "核心假设……", "status": "active", "evidence": [] }
+  ],
+  "assumptions": ["歧义/未证实前提，晨报列明"],
+  "claims": [
+    { "text": "结论声明……", "evidence": ["results/xx/metrics.json"], "status": "unproven" }
+  ],
+  "decisions": [
+    { "at": "2026-09-04T00:00:00", "text": "选定方法 X", "reason": "比 Y 更契合数据规模" }
+  ],
+  "openQuestions": ["待解决的关键问题……"],
+  "nextAction": "下一步具体动作：调用什么 skill / 产出什么文件 / 验收标准",
+  "stalled": false,
+  "lastUpdate": "2026-09-04T00:00:00"
+}

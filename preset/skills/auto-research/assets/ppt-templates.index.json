@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-12",
+  "purpose": "中文科研 PPT 模板索引。模板为大型二进制（合计约 592 MB），故**以索引+sha256 引用而非复制**，避免工作区与安装区各存一份。漂移检查：python tools/skill_health.py --ppt-index assets/ppt-templates.index.json",
+  "sourceRoot": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates",
+  "count": 15,
+  "templates": [
+    {
+      "scenario": "基金申报（国家自然科学基金 / 青年项目）",
+      "scenarioDir": "国自然",
+      "name": "1深蓝色系-国自然申请答辩",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\国自然\\1深蓝色系-国自然申请答辩.pptx",
+      "sizeBytes": 29143328,
+      "sha256": "dc1ccb86d3a950de53c2db2a35565849bae2477d3526505832076c910f0361e4"
+    },
+    {
+      "scenario": "基金申报（国家自然科学基金 / 青年项目）",
+      "scenarioDir": "国自然",
+      "name": "白蓝色系-国自然申请答辩",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\国自然\\白蓝色系-国自然申请答辩.pptx",
+      "sizeBytes": 6849498,
+      "sha256": "11ea0401903ddfb9df94e5e2f9955a7f554c81d96a41d280914ac60bfb14fa5e"
+    },
+    {
+      "scenario": "基金申报（国家自然科学基金 / 青年项目）",
+      "scenarioDir": "国自然",
+      "name": "绿色-青年项目申报",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\国自然\\绿色-青年项目申报.pptx",
+      "sizeBytes": 50079588,
+      "sha256": "0321ece825572adbebd37ba05138ba3199605112841c5c3a8af654e2cc3a7406"
+    },
+    {
+      "scenario": "基金申报（国家自然科学基金 / 青年项目）",
+      "scenarioDir": "国自然",
+      "name": "蓝色-青年项目申报",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\国自然\\蓝色-青年项目申报.pptx",
+      "sizeBytes": 50079884,
+      "sha256": "a397ea2e539c8672ab71f8eb5f8a42fc2cb0c157f059b940d0ab0b63e5caf3cb"
+    },
+    {
+      "scenario": "组会文献汇报",
+      "scenarioDir": "文献汇报",
+      "name": "高级灰-文献汇报",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\文献汇报\\高级灰-文献汇报.pptx",
+      "sizeBytes": 14088755,
+      "sha256": "992935e2b362a966b0df16875ef63f89b61130f2f3ebb42431d3a47ffeedabda"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "多铁材料",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\多铁材料.pptx",
+      "sizeBytes": 10080320,
+      "sha256": "58fa7b677c8d04f1358a5ada8f6845341ea7e8b32f8e10c4dcb9eb7bc5362af4"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "太赫兹-蓝色",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\太赫兹-蓝色.pptx",
+      "sizeBytes": 47971098,
+      "sha256": "0bd8112b5438e94aabe127fbd9097705fbca69bca56c48c0f03e2cba3b43c2ab"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "种子基金科研立项",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\种子基金科研立项.pptx",
+      "sizeBytes": 136364517,
+      "sha256": "04b680248ff1482c5f0d8cd823f064dff75dc73a25268d48b411fa602a3d313f"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "联合基金-绿色",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\联合基金-绿色.pptx",
+      "sizeBytes": 65517764,
+      "sha256": "74d8577a64be25271ffb1d3be6ff5ed10fe695a6799e28f0d4879d73b605b37d"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "联合基金-蓝色",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\联合基金-蓝色.pptx",
+      "sizeBytes": 65954141,
+      "sha256": "b0e4742d3ad104154fc4954e91fa2629d4ba6e190988ca6806d1c6b4ec5febd3"
+    },
+    {
+      "scenario": "科研报告 / 联合基金 / 重点研发答辩",
+      "scenarioDir": "科研报告",
+      "name": "青年科学基金-等离子体",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\科研报告\\青年科学基金-等离子体.pptx",
+      "sizeBytes": 5437436,
+      "sha256": "c1656c07358c45506ab662d9df2867ca964bfa4eaf1cf899df5331cc87ba1a52"
+    },
+    {
+      "scenario": "职称评审",
+      "scenarioDir": "职称评审",
+      "name": "副教授职称",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\职称评审\\副教授职称.pptx",
+      "sizeBytes": 43853786,
+      "sha256": "309f7791bc945b2712bdea24dce8d1da633d1161ab1a415343b70fbf73700c7d"
+    },
+    {
+      "scenario": "通用汇报 / 科技进步奖",
+      "scenarioDir": "通用汇报",
+      "name": "广东研发",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\通用汇报\\广东研发.pptx",
+      "sizeBytes": 27666722,
+      "sha256": "1771294caddec75bd2c79203b96849203db14c50c590b544358cfcb3c786679a"
+    },
+    {
+      "scenario": "通用汇报 / 科技进步奖",
+      "scenarioDir": "通用汇报",
+      "name": "自然科学进步奖",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\通用汇报\\自然科学进步奖.pptx",
+      "sizeBytes": 40055352,
+      "sha256": "ff2f29edb698b2380ee8b4dc32ec50f9066843557863a322e5b7e1789dc1f4e0"
+    },
+    {
+      "scenario": "重点项目结题",
+      "scenarioDir": "重点项目结题",
+      "name": "重点研发项目申报",
+      "path": "%USERPROFILE%\\.trae-cn\\skills\\融合研究\\templates\\重点项目结题\\重点研发项目申报.pptx",
+      "sizeBytes": 27327030,
+      "sha256": "9141623b0e6f18096bdd8cdf8bdd6fcc63c4700f3e322ce2812302916def10d7"
+    }
+  ]
+}

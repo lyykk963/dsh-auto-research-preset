@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "taskId": "2026-08-17-demo-01",
+  "title": "示例任务：基于深度学习的蛋白质-配体结合亲和力预测",
+  "mode": {
+    "id": "night-auto",
+    "name": "夜间全自动",
+    "customized": false,
+    "axes": { "L": "L2/L3", "A": "A4", "R": "Autopilot", "T": "T3", "M": "Balanced", "D": ["D2", "D3", "晨报"] }
+  },
+  "status": "running",
+  "deadline": "2025-06-16T07:00:00",
+  "publishedAt": "2025-06-15T23:05:00",
+  "currentPhaseId": "litreview",
+  "overallPercent": 35,
+  "phases": [
+    { "id": "intake",    "name": "任务解析",   "status": "done",    "percent": 100, "startedAt": "2025-06-15T23:05:00", "finishedAt": "2025-06-15T23:12:00", "note": "目标与验收标准已确认" },
+    { "id": "plan",      "name": "研究计划",   "status": "done",    "percent": 100, "startedAt": "2025-06-15T23:12:00", "finishedAt": "2025-06-15T23:30:00", "note": "6 阶段，预算已排，截止 07:00" },
+    { "id": "litreview", "name": "文献调研",   "status": "running", "percent": 60,  "startedAt": "2025-06-15T23:30:00", "note": "已检索 42 篇，精读 12 篇" },
+    { "id": "method",    "name": "方法设计",   "status": "pending", "percent": 0,   "note": "" },
+    { "id": "execute",   "name": "执行与分析", "status": "pending", "percent": 0,   "note": "" },
+    { "id": "write",     "name": "撰写交付",   "status": "pending", "percent": 0,   "note": "" }
+  ],
+  "reportPath": null,
+  "note": "正在精读 2023 年后的 SOTA 模型对比",
+  "lastUpdatedAt": "2025-06-16T01:12:00"
+}
