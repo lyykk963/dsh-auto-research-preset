@@ -204,6 +204,18 @@ Issue / PR 都欢迎。两点约定：
 
 - [hanmenxuezidaoshi](https://github.com/lyykk963/hanmenxuezidaoshi) —— 同作者的另一个 DeepSeek Harness 预设 + skill：从现有条件出发的人生决策参谋（个性化早报 / 点子挖掘 / 群体模拟）。
 
+## 缘起
+
+这个仓库整理发布在 **DeepSeek Harness 发布的第 100 天**。
+
+100 天里，科研的日常被改写掉了一部分：过去问一句就结束的事，现在可以交给 agent 跑一整夜，第二天早上读晨报、接着改。但科研里那些老问题一条没少：结论要能查到出处，数字要能对上口径，判断不能由做事的人自己下。
+
+所以这里只做两件事：把流程写成文件，让机器能接着跑；把「谁说了算」写清楚，让 AI 不能自己给自己盖章。
+
+谨以此，献给中国国产大模型通往 AGI 的那条路。
+
+*Dedicated to the 100th day of DSH, and to the AGI journey of China's own models.*
+
 ## 许可
 
 [MIT](LICENSE)。
